@@ -1,0 +1,50 @@
+.splash-root {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #F8E1E7 0%, #F6F2F7 100%);
+}
+.splash-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(209, 179, 196, 0.7);
+  z-index: 1;
+}
+.splash-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #2D1E2F;
+}
+.splash-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #D1B3C4;
+  margin-bottom: 1.5rem;
+}
+.splash-video-wrapper {
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(209,179,196,0.18);
+  display: flex;
+  justify-content: center;
+}
+.splash-skip {
+  background: #D1B3C4;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: 'Lato', Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(209,179,196,0.08);
+  transition: background 0.2s;
+}
+.splash-skip:hover {
+  background: #2D1E2F;
+}

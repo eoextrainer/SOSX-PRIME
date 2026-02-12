@@ -1,0 +1,75 @@
+/* Splash Screen - YouTube Video Hero */
+.splash-screen {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  transition: opacity 0.5s ease-out;
+}
+
+.splash-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash-video-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.splash-video {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 177.78vh;
+  min-height: 56.25vw;
+}
+
+.splash-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+}
+
+.splash-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 40px 48px;
+}
+
+.splash-content h1 {
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background: #D1B3C4;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: 'Lato', Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(209,179,196,0.08);
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #2D1E2F;
+}
